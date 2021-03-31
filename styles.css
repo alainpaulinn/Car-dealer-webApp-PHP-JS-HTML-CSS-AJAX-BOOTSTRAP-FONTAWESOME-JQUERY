@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(0,0,0,0); 
+    display: none;
+  }
+  ::-webkit-scrollbar-track:hover {
+   background: #eee;
+   }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #49AA6E; 
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9ceebb; 
+  }
+.nav-bar>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.nav-bar>strong{
+    margin: auto 3px ;
+    cursor: pointer;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: white;
+    background-color: #49AA6E;
+    position: absolute;
+    top: 0; width: 100%;
+
+
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+}
+.nav-bar>ul{
+    display: flex;
+    
+}
+.nav-bar>.login-button{
+    margin: auto 3px ;
+    padding: 0;
+    border-radius: 15px;
+    border: none;
+    background-color: #49AA6E;
+    color: white;
+    height: 30px; width: 50px;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+}
+.nav-bar>ul>li{
+    padding: 8px;
+    list-style-type: none;
+}
+.nav-bar>ul>li:hover{
+    background-color: #61d48d;
+}
+.main{
+    display: flex;
+}
+
+.side-bar{
+    padding-top: 50px;
+    background-color: #49AA6E;
+    height: 100vh;
+    width: 12rem;
+    
+}
+/*
+.side-bar>ul>li>a{
+    text-decoration: none;
+    color: black;
+    width: 100%;height: 100%;
+    padding: 10px, 10px,;
+    
+    background-color: red;
+}
+.side-bar>ul>li{
+    list-style: none;
+    
+}
+.side-bar>ul>li:hover{
+    background-color: #61d48d;
+}
+*/
+.cars-section{
+    outline: none;
+    border: none;
+    background-color: #49AA6E;
+    color: white;
+    width: 100%;
+    padding: 0 10px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.cars-section>p{
+    left: 0;
+    flex: 1;
+    margin-top: 10px;
+    font-size: larger;
+}
+.icon{
+    filter: grayscale(100%);
+    height: 30px; right: 0; 
+    margin-bottom: 10px;
+}
+
+
+.cars-section:hover{
+    background-color: #9ceebb;
+}
+
+.select-section{
+    background-color: white;
+    color: black;
+    /*box-shadow: -5px 2px 20px rgba(0, 0, 0, 0.185), -5px -2px 20px rgba(0, 0, 0, 0.185);*/
+}
+.select-page{
+    border-bottom: solid #9ceebb;
+    color: white !important;
+}
+.select-page>a{
+    color: white !important;
+}
+.main-content{
+    height: 100vh;
+    padding: 5px 10px;
+    padding-top: 50px;
+    background-color: white;
+    flex: 1; height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.news-card{
+    height: 28rem;
+    width: 20rem;
+    min-width: 18rem; max-width: 26.5rem;
+    margin: 4px 10px;
+    flex: 1;
+    
+    overflow: hidden;
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.75);
+}
+.news-image{
+    height: 12rem;
+    width: 100%;
+}
+.news-image>img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.card-content{
+    padding: 10px;
+    background-color: #eee;
+    height: 16rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.post-date{
+    font-size: small; 
+}
+.cost{
+    font-size: small;
+    background-color: #49AA6E;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+.date-cost{
+    display: flex;
+    justify-content: space-between;
+}
+.post-title{
+    font-size: x-large;
+    font-weight: bold;
+}
+.fin-out{
+    color: white;
+    background-color: #49AA6E;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+}
+.fin-out:hover{
+    background-color: #35774e;
+}
+
+
+.loader-gif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; height: 100%;
+    animation: fadeIn ease .4s;
+    -webkit-animation: fadeIn ease .4s;
+    -moz-animation: fadeIn ease .4s;
+    -o-animation: fadeIn ease .4s;
+    -ms-animation: fadeIn ease .4s;
+}
+/*888888888888888888-OVERLAY-LOGIN-88888888888888888*/
+.overlay-login{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #49AA6E;
+
+
+
+    /* FADE */
+    animation: fadeIn ease .4s;
+    -webkit-animation: fadeIn ease .4s;
+    -moz-animation: fadeIn ease .4s;
+    -o-animation: fadeIn ease .4s;
+    -ms-animation: fadeIn ease .4s;
+}
+@keyframes fadeIn {0% { opacity:0; }100% {opacity:1;}}
+@-moz-keyframes fadeIn { 0% {opacity:0; } 100% { opacity:1;}}
+@-webkit-keyframes fadeIn { 0% {opacity:0;}100% {opacity:1;}}
+@-o-keyframes fadeIn {0% {opacity:0;}100% {opacity:1; }}
+@-ms-keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}}
+
+
+/*******************************overlay****************************/
+.loginTitle{
+    font-size: xx-large;
+}
+.nav-bar2{
+    color: white;
+    padding-bottom: 40px;
+}
+.show-hide{
+    display: block;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+    height: 100%;
+}
+
+.login>form>button{
+    width: 100%;
+    padding: 8px;
+
+    border-radius: 3px;
+
+    background-color: #2b6641;
+    color: white;
+    cursor: pointer;
+}
+
+/**************---MANAGE----*************/
+
+.manage-area{
+    width: 100vh;
+    height: 100%;
+    background-color: #49AA6E;
+}
+.option{
+    
+    background-color: #49AA6E;
+    color: white;
+    height: 10rem;
+    width: 10rem;
+    margin: 3px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: #34794e;
+}
+.manage-contents-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto auto;
+}
+.nolink{
+    text-decoration: none;
+    color: white;
+}
+.hepfo-gato{
+    margin-top: 6rem;
+    transition: .4s ease-in-out;
+}
+
+/*************************************/
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+.long{
+    
+}
